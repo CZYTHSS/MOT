@@ -7,3 +7,16 @@ lichen-version on MOT16/MOT
 ********************* Your Benchmark Results (2D) ***********************
  IDF1  IDP  IDR| Rcll  Prcn   FAR  GT| MT  PT  ML    FP|   FN  IDs   FM  MOTA|  MOTP MOTAL 
  29.2 51.0 20.5| 66.7  91.9  1.22 517|169 253  95  6493|36744  586 1165  60.3|  81.7  60.8 
+
+deep_sort origin on MOT16_POI_train
+********************* Your Benchmark Results (2D) ***********************
+ IDF1  IDP  IDR| Rcll  Prcn   FAR  GT| MT  PT  ML    FP|   FN  IDs   FM  MOTA|  MOTP MOTAL 
+ 29.2 51.0 20.5| 66.7  91.9  1.22 517|169 253  95  6493|36744  586 1165  60.3|  81.7  60.8 
+
+deep_sort origin on MOT16_train
+ ********************* Your Benchmark Results (2D) ***********************
+ IDF1  IDP  IDR| Rcll  Prcn   FAR  GT| MT  PT  ML    FP|   FN  IDs   FM  MOTA|  MOTP MOTAL 
+ 16.5 53.1  9.8| 31.3  94.0  0.42 517| 26 178 313  2211|75819  241 1180  29.1|  78.5  29.3
+
+IDF1  IDP  IDR| Rcll  Prcn   FAR  GT| MT  PT  ML    FP|   FN  IDs   FM  MOTA|  MOTP MOTAL 
+ 48.8 65.3 39.0| 73.1  89.1  1.68  54| 21  30   3  1097| 3314  133  276  63.1|  77.6  64.2 
