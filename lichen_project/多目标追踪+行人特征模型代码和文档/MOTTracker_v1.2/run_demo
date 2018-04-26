@@ -1,8 +1,8 @@
 #!/usr/bin/zsh
 python mottracker_app.py \
-    --sequence_dir=/Users/mark/MOT/MOT16/test/MOT16-06 \
-    --detection_mat=/Users/mark/MOT/resources/detections/MOT16_POI_test/MOT16-06.npy \
-    --output=../ds-output/MOT16-06.txt \
+    --sequence_dir=/home/mark/MOT/MOT16/train/MOT16-10 \
+    --detection_mat=/home/mark/MOT/resources/detections/MOT16_POI_train/MOT16-10.npy \
+    --output=../ds-output/MOT16-10.txt \
     --min_confidence=0.3 \
     --max_cosine_distance=0.2 \
     --nn_budget=100 \

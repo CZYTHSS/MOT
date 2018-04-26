@@ -1,0 +1,9 @@
+********************* Your Benchmark Results (2D) ***********************
+ IDF1  IDP  IDR| Rcll  Prcn   FAR  GT| MT  PT  ML    FP|   FN  IDs   FM  MOTA|  MOTP MOTAL 
+ 12.2 36.4  7.4| 31.7  86.7  1.01 517| 32 184 301  5382|75422  411  451  26.4|  75.9  26.8 
+
+
+lichen-version on MOT16/MOT
+********************* Your Benchmark Results (2D) ***********************
+ IDF1  IDP  IDR| Rcll  Prcn   FAR  GT| MT  PT  ML    FP|   FN  IDs   FM  MOTA|  MOTP MOTAL 
+ 29.2 51.0 20.5| 66.7  91.9  1.22 517|169 253  95  6493|36744  586 1165  60.3|  81.7  60.8 
