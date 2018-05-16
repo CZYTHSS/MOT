@@ -1,5 +1,5 @@
 # vim: expandtab:ts=4:sw=4
-
+# -*- coding: utf-8 -*- 
 
 class TrackState:
     """
@@ -33,7 +33,7 @@ class Track:
     n_init : int
         Number of consecutive detections before the track is confirmed. The
         track state is set to `Deleted` if a miss occurs within the first
-        `n_init` frames.
+        `n_init` frames.    //大概意思是在n_init帧之内必须要连续的侦测到该行人？
     max_age : int
         The maximum number of consecutive misses before the track state is
         set to `Deleted`.

@@ -1,4 +1,5 @@
 # vim: expandtab:ts=4:sw=4
+# -*- coding: utf-8 -*- 
 from __future__ import division, print_function, absolute_import
 
 import argparse
@@ -12,6 +13,8 @@ from application_util import visualization
 from deep_sort import nn_matching
 from deep_sort.detection import Detection
 from deep_sort.tracker import Tracker
+
+import pdb
 
 
 def gather_sequence_info(sequence_dir, detection_file):
@@ -56,6 +59,7 @@ def gather_sequence_info(sequence_dir, detection_file):
     if len(image_filenames) > 0:
         image = cv2.imread(next(iter(image_filenames.values())),
                            cv2.IMREAD_GRAYSCALE)
+
         image_size = image.shape
     else:
         image_size = None
@@ -116,7 +120,6 @@ def create_detections(detection_mat, frame_idx, min_height=0):
     """
     frame_indices = detection_mat[:, 0].astype(np.int)
     mask = frame_indices == frame_idx
-
     detection_list = []
     for row in detection_mat[mask]:
         bbox, confidence, feature = row[2:6], row[6], row[10:]
@@ -158,15 +161,21 @@ def run(sequence_dir, detection_file, output_file, min_confidence,
 
     """
     seq_info = gather_sequence_info(sequence_dir, detection_file)
+    #pdb.set_trace() 
     metric = nn_matching.NearestNeighborDistanceMetric(
         "cosine", max_cosine_distance, nn_budget)
     tracker = Tracker(metric)
     results = []
 
-    def frame_callback(vis, frame_idx):
+    pdb.set_trace()
+
+    def frame_callback(vis, frame_idx):     #是对每一帧做处理
         print("Processing frame %05d" % frame_idx)
 
         # Load image and generate detections.
+        #这里得到的结果都是在一帧里面的detections信息
+
+
         detections = create_detections(
             seq_info["detections"], frame_idx, min_detection_height)
         detections = [d for d in detections if d.confidence >= min_confidence]
@@ -178,6 +187,7 @@ def run(sequence_dir, detection_file, output_file, min_confidence,
             boxes, nms_max_overlap, scores)
         detections = [detections[i] for i in indices]
 
+        pdb.set_trace()
         # Update tracker.
         tracker.predict()
         tracker.update(detections)
@@ -245,7 +255,8 @@ def parse_args():
         "gallery. If None, no budget is enforced.", type=int, default=None)
     parser.add_argument(
         "--display", help="Show intermediate tracking results",
-        default=True, type=bool)
+        default=False, type=bool)
+    #pdb.set_trace()
     return parser.parse_args()
 
 
