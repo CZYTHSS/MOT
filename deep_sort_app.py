@@ -161,13 +161,12 @@ def run(sequence_dir, detection_file, output_file, min_confidence,
 
     """
     seq_info = gather_sequence_info(sequence_dir, detection_file)
-    #pdb.set_trace() 
     metric = nn_matching.NearestNeighborDistanceMetric(
         "cosine", max_cosine_distance, nn_budget)
     tracker = Tracker(metric)
     results = []
 
-    pdb.set_trace()
+    #pdb.set_trace()
 
     def frame_callback(vis, frame_idx):     #是对每一帧做处理
         print("Processing frame %05d" % frame_idx)
@@ -187,10 +186,14 @@ def run(sequence_dir, detection_file, output_file, min_confidence,
             boxes, nms_max_overlap, scores)
         detections = [detections[i] for i in indices]
 
-        pdb.set_trace()
+        #pdb.set_trace()
         # Update tracker.
-        tracker.predict()
+        '''
+        tracker.update is the core function of this project
+        '''
+        tracker.predict()   #更新track的mean,covariance,age,time_since_update
         tracker.update(detections)
+
 
         # Update visualization.
         if display:

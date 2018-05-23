@@ -1,9 +1,11 @@
 # vim: expandtab:ts=4:sw=4
+# -*- coding: utf-8 -*- 
 from __future__ import absolute_import
 import numpy as np
 from sklearn.utils.linear_assignment_ import linear_assignment
 from . import kalman_filter
 
+import pdb
 
 INFTY_COST = 1e+5
 
@@ -52,7 +54,7 @@ def min_cost_matching(
     if len(detection_indices) == 0 or len(track_indices) == 0:
         return [], track_indices, detection_indices  # Nothing to match.
 
-    cost_matrix = distance_metric(
+    cost_matrix = distance_metric(      # 是tracker.py中的gated_metric
         tracks, detections, track_indices, detection_indices)
     cost_matrix[cost_matrix > max_distance] = max_distance + 1e-5
     indices = linear_assignment(cost_matrix)
@@ -131,7 +133,7 @@ def matching_cascade(
         ]
         if len(track_indices_l) == 0:  # Nothing to match at this level
             continue
-
+        # 这里的distance_metric 是在tracker.py中定义的gated_metric
         matches_l, _, unmatched_detections = \
             min_cost_matching(
                 distance_metric, max_distance, tracks, detections,
@@ -179,12 +181,17 @@ def gate_cost_matrix(
 
     """
     gating_dim = 2 if only_position else 4
-    gating_threshold = kalman_filter.chi2inv95[gating_dim]
+    gating_threshold = kalman_filter.chi2inv95[gating_dim]      # mahalanobis threshold
+    #pdb.set_trace()
     measurements = np.asarray(
         [detections[i].to_xyah() for i in detection_indices])
+    #pdb.set_trace()
     for row, track_idx in enumerate(track_indices):
         track = tracks[track_idx]
+        # gating_distance 是一个list, 计算的是每个track到新的detection之间的距离
         gating_distance = kf.gating_distance(
             track.mean, track.covariance, measurements, only_position)
         cost_matrix[row, gating_distance > gating_threshold] = gated_cost
+    #np.savetxt("cost_matrix", cost_matrix)
+    #pdb.set_trace()
     return cost_matrix
