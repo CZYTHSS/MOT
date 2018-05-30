@@ -71,7 +71,7 @@ class Tracker:
         matches, unmatched_tracks, unmatched_detections = \
             self._match(detections)
 
-        #pdb.set_trace()
+        # pdb.set_trace()
 
         # Update track set.
         for track_idx, detection_idx in matches:
@@ -89,7 +89,7 @@ class Tracker:
         for track in self.tracks:
             if not track.is_confirmed():
                 continue
-            #pdb.set_trace()
+            # pdb.set_trace()
             features += track.features
             targets += [track.track_id for _ in track.features]
             track.features = []
@@ -110,6 +110,7 @@ class Tracker:
             cost_matrix = linear_assignment.gate_cost_matrix(       
                 self.kf, cost_matrix, tracks, dets, track_indices,
                 detection_indices)
+            # print(cost_matrix)
 
             return cost_matrix
 
@@ -120,7 +121,7 @@ class Tracker:
         unconfirmed_tracks = [
             i for i, t in enumerate(self.tracks) if not t.is_confirmed()]
 
-        #pdb.set_trace()
+        # pdb.set_trace()
 
         # Associate confirmed tracks using appearance features.
         # matching_threshold is Gating threshold for cosine distance metric (object appearance)."

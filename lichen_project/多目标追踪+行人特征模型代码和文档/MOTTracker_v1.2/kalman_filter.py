@@ -87,6 +87,10 @@ class KalmanFilter(object):
 
 
     def gating_distance(self, measurements):
+        """
+
+        :rtype:
+        """
         # 计算 state 与 measurement 之间的 Mahalanobis distance, 并在使用9.4877作为阈值进行过滤
         state, covariance = self.project()
 

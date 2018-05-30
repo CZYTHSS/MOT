@@ -213,6 +213,7 @@ class KalmanFilter(object):
             Returns an array of length N, where the i-th element contains the
             squared Mahalanobis distance between (mean, covariance) and
             `measurements[i]`.
+            :rtype:
 
         """
         mean, covariance = self.project(mean, covariance)

@@ -171,6 +171,8 @@ def run(sequence_dir, detection_file, output_file, min_confidence,
     def frame_callback(vis, frame_idx):     #是对每一帧做处理
         print("Processing frame %05d" % frame_idx)
 
+        if frame_idx == 153:
+            print(1)
         # Load image and generate detections.
         #这里得到的结果都是在一帧里面的detections信息
 

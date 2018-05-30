@@ -6,6 +6,7 @@ from sklearn.utils.linear_assignment_ import linear_assignment
 from . import kalman_filter
 
 import pdb
+import time
 
 INFTY_COST = 1e+5
 
@@ -57,7 +58,7 @@ def min_cost_matching(
     cost_matrix = distance_metric(      # 是tracker.py中的gated_metric
         tracks, detections, track_indices, detection_indices)
     cost_matrix[cost_matrix > max_distance] = max_distance + 1e-5
-    indices = linear_assignment(cost_matrix)
+    indices = linear_assignment(cost_matrix)    # 调用API使用Hungarian Algorithm
 
     matches, unmatched_tracks, unmatched_detections = [], [], []
     for col, detection_idx in enumerate(detection_indices):
@@ -123,10 +124,11 @@ def matching_cascade(
 
     unmatched_detections = detection_indices
     matches = []
-    for level in range(cascade_depth):
+    for level in range(cascade_depth):      # cascade_depth 等同于初始参数中的max_age
         if len(unmatched_detections) == 0:  # No detections left
             break
 
+        # 下面的code block描述的是第level帧之前最后一次被确认的track
         track_indices_l = [
             k for k in track_indices
             if tracks[k].time_since_update == 1 + level
@@ -145,7 +147,7 @@ def matching_cascade(
 
 def gate_cost_matrix(
         kf, cost_matrix, tracks, detections, track_indices, detection_indices,
-        gated_cost=INFTY_COST, only_position=False):
+        gated_cost=INFTY_COST, only_position=True):
     """Invalidate infeasible entries in cost matrix based on the state
     distributions obtained by Kalman filtering.
 
@@ -190,8 +192,21 @@ def gate_cost_matrix(
         track = tracks[track_idx]
         # gating_distance 是一个list, 计算的是每个track到新的detection之间的距离
         gating_distance = kf.gating_distance(
-            track.mean, track.covariance, measurements, only_position)
+            track.mean, track.covariance, measurements, only_position)  # type: list
+
+        #if track_idx == 5:
+            #print(row, track_idx)
+            #pdb.set_trace()
+        #pdb.set_trace()
         cost_matrix[row, gating_distance > gating_threshold] = gated_cost
+        '''
+        alpha=0.7
+        for i in range(len(gating_distance)):
+            cost_matrix[row, i] = alpha * cost_matrix[row, i] + (1 - alpha) * gating_distance[i]
+        '''
+
+
+        #pdb.set_trace()
     #np.savetxt("cost_matrix", cost_matrix)
     #pdb.set_trace()
     return cost_matrix

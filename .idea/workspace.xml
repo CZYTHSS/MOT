@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6f62d744-8c42-44e4-9a89-fe881a92f61c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug_output/MOT16-04.txt" beforeDir="false" afterPath="$PROJECT_DIR$/debug_output/MOT16-04.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_sort/kalman_filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/deep_sort/kalman_filter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_sort/linear_assignment.py" beforeDir="false" afterPath="$PROJECT_DIR$/deep_sort/linear_assignment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_sort/tracker.py" beforeDir="false" afterPath="$PROJECT_DIR$/deep_sort/tracker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_sort_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/deep_sort_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output-poi/MOT16-02.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ds-origin-output-poi/MOT16-02.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output-poi/MOT16-04.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ds-origin-output-poi/MOT16-04.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output-poi/MOT16-05.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ds-origin-output-poi/MOT16-05.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output-poi/MOT16-09.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ds-origin-output-poi/MOT16-09.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output-poi/MOT16-10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ds-origin-output-poi/MOT16-10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output-poi/MOT16-11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ds-origin-output-poi/MOT16-11.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output-poi/MOT16-13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ds-origin-output-poi/MOT16-13.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output/MOT16-02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output/MOT16-04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output/MOT16-05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output/MOT16-09.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output/MOT16-10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output/MOT16-11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output/MOT16-13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output/clean/MOT16-02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output/clean/MOT16-04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output/clean/MOT16-05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output/clean/MOT16-09.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output/clean/MOT16-10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output/clean/MOT16-11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output/clean/MOT16-13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-origin-output/eval2D.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eval_command.sh" beforeDir="false" afterPath="$PROJECT_DIR$/eval_command.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lichen_project/多目标追踪+行人特征模型代码和文档/MOTTracker_v1.2/kalman_filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/lichen_project/多目标追踪+行人特征模型代码和文档/MOTTracker_v1.2/kalman_filter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_command.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_command.sh" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/MOT$deep_sort_app.coverage" NAME="deep_sort_app Coverage Results" MODIFIED="1527616499011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="linear_assignment.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deep_sort/linear_assignment.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="184" selection-start-line="184" selection-end-line="184" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deep_sort_app.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deep_sort_app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="163" column="55" lean-forward="true" selection-start-line="163" selection-start-column="55" selection-end-line="163" selection-end-column="55" />
+              <folding>
+                <element signature="e#52#116#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tracker.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deep_sort/tracker.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1905">
+              <caret line="133" column="47" selection-start-line="133" selection-start-column="47" selection-end-line="133" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="track.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deep_sort/track.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>print</find>
+      <find>max_cosine_distance</find>
+      <find>max_distance</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/deep_sort_app.py" />
+        <option value="$PROJECT_DIR$/deep_sort/tracker.py" />
+        <option value="$PROJECT_DIR$/deep_sort/linear_assignment.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1920" />
+    <option name="height" value="988" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MOT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MOT" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MOT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MOT" type="462c0819:PsiDirectoryNode" />
+              <item name="deep_sort" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Course" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.deep_sort_app">
+    <configuration name="run_command.sh" type="BashConfigurationType" factoryName="Bash">
+      <module name="MOT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/sh" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_command.sh" />
+      <option name="PARAMETERS" value="" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="MOT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="deep_sort_app" type="PythonConfigurationType" factoryName="Python">
+      <module name="MOT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deep_sort_app.py" />
+      <option name="PARAMETERS" value="--sequence_dir=./MOT16/train/MOT16-09 --detection_file=./resources/detections/MOT16_POI_train/MOT16-09.npy --min_confidence=0.3 --nn_budget=150 --output_file=./debug_output/MOT16-09.txt --display=True --nms_max_overlap=0.9 --max_cosine_distance=0.2" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Bash.run_command.sh" />
+      <item itemvalue="Python.deep_sort_app" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f62d744-8c42-44e4-9a89-fe881a92f61c" name="Default" comment="" />
+      <created>1527572357275</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527572357275</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="1920" height="988" extended-state="0" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50069445" side_tool="true" weight="0.23035952" />
+      <window_info anchor="right" x="0" y="0" width="430" height="788" id="Documentation" order="5" sideWeight="0.3107221" side_tool="true" weight="0.39375" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.3288948" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21334793" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18177083" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="4" sideWeight="0.4982699" weight="0.3298611" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" anchor="right" id="Debug" order="6" sideWeight="0.6892779" visible="true" weight="0.25729167" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/deep_sort_app.py</url>
+          <line>174</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/deep_sort_app.py</url>
+          <line>184</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="36" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/deep_sort/linear_assignment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3030">
+          <caret line="208" column="43" lean-forward="true" selection-start-line="208" selection-start-column="43" selection-end-line="208" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deep_sort_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
+          <folding>
+            <element signature="e#52#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deep_sort/tracker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1755">
+          <caret line="123" column="25" lean-forward="true" selection-start-line="123" selection-start-column="25" selection-end-line="123" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deep_sort/nn_matching.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_command.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deep_sort/track.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deep_sort/tracker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1905">
+          <caret line="133" column="47" selection-start-line="133" selection-start-column="47" selection-end-line="133" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deep_sort/linear_assignment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="184" selection-start-line="184" selection-end-line="184" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deep_sort_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="163" column="55" lean-forward="true" selection-start-line="163" selection-start-column="55" selection-end-line="163" selection-end-column="55" />
+          <folding>
+            <element signature="e#52#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
