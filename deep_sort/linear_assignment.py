@@ -117,6 +117,12 @@ def matching_cascade(
         * A list of unmatched detection indices.
 
     """
+
+    '''
+    for tra in tracks:
+        if tra.track_id >= 16:
+            tra.state = 3
+    '''
     if track_indices is None:
         track_indices = list(range(len(tracks)))
     if detection_indices is None:
@@ -127,6 +133,7 @@ def matching_cascade(
     for level in range(cascade_depth):      # cascade_depth 等同于初始参数中的max_age
         if len(unmatched_detections) == 0:  # No detections left
             break
+
 
         # 下面的code block描述的是第level帧之前最后一次被确认的track
         track_indices_l = [

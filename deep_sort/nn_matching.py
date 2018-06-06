@@ -1,4 +1,5 @@
 # vim: expandtab:ts=4:sw=4
+# -*- coding: utf-8 -*-
 import numpy as np
 
 
@@ -51,7 +52,28 @@ def _cosine_distance(a, b, data_is_normalized=False):
     if not data_is_normalized:
         a = np.asarray(a) / np.linalg.norm(a, axis=1, keepdims=True)
         b = np.asarray(b) / np.linalg.norm(b, axis=1, keepdims=True)
-    return 1. - np.dot(a, b.T)
+
+    separate = np.zeros(len(b))    # 指的是features中每个向量上每个维度单独找最小值再求和的结果
+    for i in range(len(b)):
+        c = np.multiply(a, b[i])
+        d = c.max(axis=0)
+        d.sort()
+        e = sum(d[60:128])
+        separate[i] = 1 - e
+
+    overall = 1. - np.dot(a, b.T)  # 指的是features中一个feature向量整体做点乘的结果
+    overall = overall.min(axis=0)
+    max_overall_distance = 0.3
+    max_separate_distance = -0.1
+
+    alpha = 0.5
+    result = alpha * overall + (1 - alpha) * separate
+    for i in range(len(result)):
+        if overall[i] > max_overall_distance or separate[i] > max_separate_distance:
+            result[i] = 10000
+    return result
+
+    # return 1. - np.dot(a, b.T)
 
 
 def _nn_euclidean_distance(x, y):
@@ -93,6 +115,7 @@ def _nn_cosine_distance(x, y):
 
     """
     distances = _cosine_distance(x, y)
+    # haha = distances.min(axis=0)
     return distances.min(axis=0)
 
 
@@ -121,7 +144,6 @@ class NearestNeighborDistanceMetric(object):
     """
 
     def __init__(self, metric, matching_threshold, budget=None):
-
 
         if metric == "euclidean":
             self._metric = _nn_euclidean_distance
